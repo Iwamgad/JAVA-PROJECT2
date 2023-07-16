@@ -39,7 +39,8 @@ public class StudentController {
     // Gets a student by ID
 
     @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable("id") Long studentId) throws StudentNotFoundException {
+    public Student getStudentById(@PathVariable("id") Long studentId)
+            throws StudentNotFoundException {
         LOGGER.info("Inside getStudentById of Student Controller ");
         return studentService.getStudentById(studentId);
     }
