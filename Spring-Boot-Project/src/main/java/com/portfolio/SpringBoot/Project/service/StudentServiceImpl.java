@@ -71,7 +71,8 @@ public class StudentServiceImpl implements StudentService {
 
     // No predefined method available in out JPA repository it should be written by us
     @Override
-    public Student getStudentByName(String name) {return studentRepository.findByNameIgnoreCase(name);}
+    public Student getStudentByName(String name) {
+        return studentRepository.findByNameIgnoreCase(name);}
 
 
 
